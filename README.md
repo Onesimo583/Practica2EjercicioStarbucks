@@ -1,4 +1,4 @@
-# Práctica 2 - Curso de Frontend Ejercicio Strabucks
+# Práctica 2 - Curso de Frontend Ejercicio Starbucks
 
 Este proyecto fue realizado como parte de una actividad del curso de Frontend. El propósito  es crear elementos de HTML que usen más propiedades de CSS. 
 ## Archivos del Proyecto
