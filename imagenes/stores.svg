@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="28px" viewBox="0 0 20 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>stores</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header-submenu" transform="translate(-1234.000000, -36.000000)" fill="#000000">
+            <path d="M1243.8,49.3 C1241.87,49.3 1240.3,47.732 1240.3,45.8 C1240.3,43.868 1241.87,42.3 1243.8,42.3 C1245.73,42.3 1247.3,43.868 1247.3,45.8 C1247.3,47.732 1245.73,49.3 1243.8,49.3 Z M1243.8,36 C1238.38,36 1234,40.382 1234,45.8 C1234,53.15 1243.8,64 1243.8,64 C1243.8,64 1253.6,53.15 1253.6,45.8 C1253.6,40.382 1249.22,36 1243.8,36 Z" id="stores"></path>
+        </g>
+    </g>
+</svg>
