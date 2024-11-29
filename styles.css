@@ -1,168 +1,6 @@
-#caja-2 h2.title {
-  font-size: 30px;
-  padding: 0 80px;
-  margin-bottom: 28px;
-}
-#caja-3 h2.title {
-  font-size: 30px;
-  padding: 0 178px;
-  margin-bottom: 7px;
-}
-#caja-4 h2.title {
-  font-size: 30px;
-  padding: 0 197px;
-  margin-bottom: 7px;
-}
-#caja-5 h2.title {
-  font-size: 30px;
-  margin-bottom: 7px;
-}
-#caja-5 div {
-  display: block;
-}
-#caja-5 a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  border: 1px solid;
-  border-radius: 50px;
-  padding: 3px 16px;
-}
-.caja {
-  width: auto;
-  display: flex;
-  font-family: Noto Sans, Helvetica, Arial, sans-serif;
-  color: #fff;
-  text-align: center;
-  margin: 30px auto;
-}
-.caja:first-of-type {
-  margin: 0; /* Elimina el margen solo para la primera imagen */
-}
-.caja img {
-  width: 700px;
-  height: 408.33px;
-}
-
-.caja .contenedor-text {
-  padding: 10px;
-  margin: 100px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.caja p {
-  font-size: 1.188rem;
-  line-height: 1.75;
-  padding: 0px 86px;
-  margin: 6px;
-}
-#caja-1 {
-  background-color: #1e3932;
-  height: 408px;
-}
-
-#caja-2 p {
-  padding: 0px 80px;
-}
-#caja-4 p {
-  padding: 10px 103px;
-}
-#caja-5 p {
-  padding: 10px 103px;
-  margin-bottom: 24px;
-}
-
-#caja-2 {
-  background-color: rgb(0, 68, 180);
-  height: 408.33px;
-}
-#caja-3 {
-  display: flex;
-  background-color: #d50032;
-  flex-direction: row-reverse;
-  height: 408.33px;
-}
-#caja-4 {
-  background-color: #1e3932;
-  height: 408.33px;
-}
-#caja-5 {
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: #d50032;
-  height: 408.33px;
-}
-.color-uno {
-  background-color: #f6bfd9; /* Color de fondo específico */
-}
-
-.color-dos {
-  background-color: #98cde4; /* Otro color de fondo */
-}
-
-.imagen-con-fondo {
-  margin-right: 30px; /* Espacio entre imágenes */
-}
-
-.imagen-con-fondo:last-child {
-  margin-right: 0; /* Sin margen en el último elemento */
-}
-
-.imagen-con-fondo img {
-  display: block; /* Evita que las imágenes generen espacio extra */
-  height: auto;
-  max-width: 100%; /* Ajusta el tamaño si es necesario */
-
-}
-
-.contenedor {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.cont-text {
-  color: #d50032;
-  padding: 40px 16px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.cont-text p {
-  width: 38%;
-}
-.cont-text .terminosycondiciones{
-  width: 25%;
-  color: #166672;
-}
-.imagen-con-fondo .color-uno a {
-  padding: 30px;
-}
-.button,.button2 {
-  margin-top: 30px; /* Espaciado entre el texto y el botón */
-  text-align: center; /* Centrar contenido */
-
-}
-.button2 a{
-  color: #d50032; 
-  text-decoration: none;
- font-weight: 600;
- border: 1px solid;
- border-radius: 50px;
- padding: 3px 16px;}
-.button a {
-  color: #166672; 
-   text-decoration: none;
-  font-weight: 600;
-  border: 1px solid;
-  border-radius: 50px;
-  padding: 3px 16px;
-}
-
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* Herencia: Esta propiedad se hereda por defecto en los elementos hijos */
 }
 
 .navbar {
@@ -174,9 +12,11 @@ body {
   background-color: white;
   border-bottom: 1px solid #ddd;
 }
+
 .navbar-logo img {
   width: 50px;
 }
+
 .navbar-links {
   display: flex;
   gap: 40px;
@@ -187,7 +27,7 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 16px; /* Herencia: El tamaño de fuente podría ser heredado si no se sobreescribe */
 }
 
 .navbar-actions {
@@ -222,6 +62,7 @@ body {
 .store-locator i img {
   width: 15px;
 }
+
 .btn {
   text-decoration: none;
   padding: 5px 15px;
@@ -254,9 +95,188 @@ body {
 .join:hover {
   background-color: #333;
 }
-/*footer*/
-body {
-  font-family: Arial, sans-serif;
+
+/* Especificidad más alta: al usar el selector de ID, la regla tiene mayor prioridad */
+#caja-2 h2.title, #caja-3 h2.title, #caja-4 h2.title, #caja-5 h2.title {
+  font-size: 30px;
+  padding: 0 80px;
+  margin-bottom: 28px;
+}
+
+/* Reglas específicas para cada caja, con especificidad más alta debido al uso de ID */
+#caja-3 h2.title {
+  padding: 0 178px;
+  margin-bottom: 7px;
+}
+
+#caja-4 h2.title {
+  padding: 0 197px;
+  margin-bottom: 7px;
+}
+
+#caja-5 h2.title {
+  margin-bottom: 7px;
+}
+
+#caja-5 div {
+  display: block;
+}
+
+#caja-5 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 3px 16px;
+}
+
+.caja {
+  width: auto;
+  display: flex;
+  font-family: Noto Sans, Helvetica, Arial, sans-serif; /* Herencia: El tipo de fuente es heredado */
+  color: #fff;
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* Especificidad más alta: Se aplica solo al primer hijo de la clase .caja */
+.caja:first-of-type {
+  margin: 0; /* Elimina el margen solo para la primera imagen */
+}
+
+.caja img {
+  width: 700px;
+  height: 408.33px;
+}
+
+.caja .contenedor-text {
+  padding: 10px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.caja p {
+  font-size: 1.188rem;
+  line-height: 1.75;
+  padding: 0px 86px;
+  margin: 6px;
+}
+
+#caja-1 {
+  background-color: #1e3932;
+  height: 408px;
+}
+
+#caja-2 p {
+  padding: 0px 80px;
+}
+
+#caja-4 p {
+  padding: 10px 103px;
+}
+
+#caja-5 p {
+  padding: 10px 103px;
+  margin-bottom: 24px;
+}
+
+#caja-2 {
+  background-color: rgb(0, 68, 180);
+  height: 408.33px;
+}
+
+#caja-3 {
+  display: flex;
+  background-color: #d50032;
+  flex-direction: row-reverse;
+  height: 408.33px;
+}
+
+#caja-4 {
+  background-color: #1e3932;
+  height: 408.33px;
+}
+
+#caja-5 {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #d50032;
+  height: 408.33px;
+}
+
+.color-uno {
+  background-color: #f6bfd9; /* Color de fondo específico */
+}
+
+.color-dos {
+  background-color: #98cde4; /* Otro color de fondo */
+}
+
+.imagen-con-fondo {
+  margin-right: 30px; /* Espacio entre imágenes */
+}
+
+.imagen-con-fondo:last-child {
+  margin-right: 0; /* Sin margen en el último elemento */
+}
+
+.imagen-con-fondo img {
+  display: block; /* Evita que las imágenes generen espacio extra */
+  height: auto;
+  max-width: 100%; /* Ajusta el tamaño si es necesario */
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cont-text {
+  color: #d50032;
+  padding: 40px 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cont-text p {
+  width: 38%;
+}
+
+.cont-text .terminosycondiciones {
+  width: 25%;
+  color: #166672;
+}
+
+.imagen-con-fondo .color-uno a {
+  padding: 30px;
+}
+
+.button, .button2 {
+  margin-top: 30px; /* Espaciado entre el texto y el botón */
+  text-align: center; /* Centrar contenido */
+}
+
+.button2 a {
+  color: #d50032; 
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 3px 16px;
+}
+
+.button a {
+  color: #166672; 
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 3px 16px;
 }
 
 .footer {
@@ -267,11 +287,12 @@ body {
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra superior suave */
 }
 
-.footer p{
+.footer p {
   margin-bottom: 5px;
   font-size: 14px;
 }
-.footer span{
+
+.footer span {
   font-size: 10px;
 }
 
@@ -288,7 +309,6 @@ body {
 .footer-column {
   text-align: left;
   padding: 0 25px;
-
 }
 
 .footer-column h4 {
@@ -310,15 +330,15 @@ body {
 
 .footer-column ul li a {
   text-decoration: none;
-
   transition: color 0.3s;
   color: #777;
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .footer-column ul li a:hover {
   color: #14191f;
 }
+
 .footer-social {
   display: flex;
   justify-content: center;
@@ -346,13 +366,13 @@ body {
 }
 
 .footer-links {
-  margin: 10px 0;
-  font-size: 16px;
-  margin-bottom: 30px;
+  margin-top: 10px; /* Separación entre contenido y los enlaces de política */
+  text-align: center;
 }
 
 .footer-links a {
   color: #9999;
+  margin-right: 20px; /* Separación entre enlaces */
   text-decoration: none;
   margin: 0 5px;
 }
@@ -360,7 +380,6 @@ body {
 .footer-links a:hover {
   color: #999;
 }
-
 .footer-bottom {
   font-size: 12px;
   color: #9999;
