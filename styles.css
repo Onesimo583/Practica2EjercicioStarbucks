@@ -2,11 +2,12 @@ body {
   margin: 0;
   font-family: Arial, sans-serif; /* Herencia: Esta propiedad se hereda por defecto en los elementos hijos */
 }
-
+/* Apartado que usa flexbox */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+/*------------------------------*/
   padding: 20px 20px 20px;
   margin: auto 54px;
   background-color: white;
@@ -29,23 +30,23 @@ body {
   font-weight: bold;
   font-size: 16px; /* Herencia: El tamaño de fuente podría ser heredado si no se sobreescribe */
 }
-
+/*Flexbox*/
 .navbar-actions {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-
+/*Flexbox*/
 .navbar-left {
   display: flex;
   align-items: center;
 }
-
+/*Flexbox*/
 .navbar-right {
   display: flex;
   align-items: center;
 }
-
+/*Flexbox*/
 .store-locator {
   text-decoration: none;
   color: black;
@@ -149,7 +150,7 @@ body {
   width: 700px;
   height: 408.33px;
 }
-
+/*Flexbox*/
 .caja .contenedor-text {
   padding: 10px;
   margin: 100px auto;
@@ -187,7 +188,7 @@ body {
   background-color: rgb(0, 68, 180);
   height: 408.33px;
 }
-
+/*Flexbox*/
 #caja-3 {
   display: flex;
   background-color: #d50032;
@@ -199,6 +200,7 @@ body {
   background-color: #1e3932;
   height: 408.33px;
 }
+/*Flexbox*/
 
 #caja-5 {
   display: flex;
@@ -228,6 +230,7 @@ body {
   height: auto;
   max-width: 100%; /* Ajusta el tamaño si es necesario */
 }
+/*Flexbox*/
 
 .contenedor {
   display: flex;
@@ -295,6 +298,7 @@ body {
 .footer span {
   font-size: 10px;
 }
+/*Flexbox*/
 
 .footer-content {
   display: flex;
