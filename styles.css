@@ -7,11 +7,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-/*------------------------------*/
   padding: 20px 20px 20px;
-  margin: auto 54px;
   background-color: white;
   border-bottom: 1px solid #ddd;
+  /*Position y z-index en css*/
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-logo img {
@@ -98,7 +102,10 @@ body {
 }
 
 /* Especificidad más alta: al usar el selector de ID, la regla tiene mayor prioridad */
-#caja-2 h2.title, #caja-3 h2.title, #caja-4 h2.title, #caja-5 h2.title {
+#caja-2 h2.title,
+#caja-3 h2.title,
+#caja-4 h2.title,
+#caja-5 h2.title {
   font-size: 30px;
   padding: 0 80px;
   margin-bottom: 28px;
@@ -150,6 +157,7 @@ body {
   width: 700px;
   height: 408.33px;
 }
+
 /*Flexbox*/
 .caja .contenedor-text {
   padding: 10px;
@@ -167,6 +175,8 @@ body {
 }
 
 #caja-1 {
+  margin-top: 95px;
+
   background-color: #1e3932;
   height: 408px;
 }
@@ -259,13 +269,14 @@ body {
   padding: 30px;
 }
 
-.button, .button2 {
+.button,
+.button2 {
   margin-top: 30px; /* Espaciado entre el texto y el botón */
   text-align: center; /* Centrar contenido */
 }
 
 .button2 a {
-  color: #d50032; 
+  color: #d50032;
   text-decoration: none;
   font-weight: 600;
   border: 1px solid;
@@ -274,7 +285,7 @@ body {
 }
 
 .button a {
-  color: #166672; 
+  color: #166672;
   text-decoration: none;
   font-weight: 600;
   border: 1px solid;
@@ -307,7 +318,7 @@ body {
   border-bottom: 1px solid #ddd;
   font-size: 1rem;
   line-height: 1.5;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
 }
 
 .footer-column {
