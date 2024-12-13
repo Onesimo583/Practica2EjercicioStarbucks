@@ -33,7 +33,7 @@ body {
   width: 100%;
   padding: 0 20px;
 }
-.main-menu {
+.main-menu .navbar-container {
   display: flex;
 
   justify-content: space-between;
@@ -282,11 +282,10 @@ body {
 }
 
 .cont-text p {
-  width: 38%;
+  width: 80%;
 }
 
 .cont-text .terminosycondiciones {
-  width: 25%;
   color: #166672;
 }
 
@@ -437,9 +436,13 @@ body {
 /* Media queries */
 
 @media (max-width: 768px) {
+  .store-locator {
+    padding-right: 0;
+  }
   .navbar {
     width: auto;
   }
+
   #caja-1,
   #caja-2,
   #caja-3,
@@ -447,16 +450,7 @@ body {
   #caja-5 {
     height: auto;
   }
-  /*
-  #caja-2,
-  #caja-3,
-  #caja-4,#caja-5 {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
 
-*/
 
   .caja .contenedor-text {
     margin: 10px;
@@ -521,33 +515,6 @@ body {
     width: 40px;
   }
 
-  /*
-  .navbar-left .navbar-links,
-  .navbar-right .navbar-actions {
-    display: none;
-  }
-*/
-  /*
-  .hamburger {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  */
-  /*
-  .navbar-links,
-  .navbar-actions {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .caja {
-    flex-direction: column;
-    text-align: center;
-  }
-*/
   #caja-1 {
     margin-top: 75px;
   }
@@ -565,8 +532,11 @@ body {
 }
 
 @media (max-width: 480px) {
-  .navbar-left{
+  .navbar-left {
     padding-top: 1rem;
+  }
+  .navbar-right{
+    display: flex;
   }
 
   .main-menu {
@@ -583,6 +553,11 @@ body {
     overflow-y: auto;
     height: 100vh;
   }
+  .main-menu .navbar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   .main-menu.active {
     display: flex;
@@ -595,32 +570,21 @@ body {
     margin-top: 30px;
     padding-bottom: 30px;
   }
-  /*
-  .navbar-right {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    padding-bottom: 30px;
-  }
-  */
-  .store-locator{
-       padding-right: 8rem;
+ 
+  .store-locator {
+    padding-right: 8rem;
   }
   .navbar-actions {
     display: flex;
+    flex-direction: row;
     gap: 25px;
 
     margin-bottom: 30px;
     margin-top: 30px;
     padding-bottom: 30px;
     margin-left: 30px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
-
-
-
 
   .hamburger {
     display: block;
